@@ -1,0 +1,126 @@
+body {
+  font-family: Nunito, 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(109, 109, 161);
+  /*
+  background: linear(hsl(186, 76%, 16%)); /* hsl(223, 90%, 60%), hsl(240, 56%, 42%)); */
+  -webkit-user-select: none;
+  /* Compatibilidad con WebKit */
+  user-select: none;
+  /* Para navegadores modernos */
+}
+
+table {
+  width: 99%;
+  border-collapse: collapse;
+  background-color: rgb(179, 230, 240);
+  border-collapse: separate;
+  /* Es importante usar 'separate' */
+  border-spacing: 5px;
+  /* Espaciado entre celdas para apreciar el efecto de bordes redondeados */
+  border-radius: 12px;
+}
+
+
+tr {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+td,
+th {
+  text-align: center;
+  height: 1.5em;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.ancho {
+  width: 19.5%;
+}
+
+td {
+  vertical-align: super;
+  padding: 1em 0;
+  background-color: white;
+  border: blue solid 1px;
+}
+
+th {
+  color: white;
+  font-weight: 900;
+  background-color: rgb(109, 109, 161);
+}
+
+.blanco {
+  background-color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 3px;
+}
+
+h1 {
+  font-weight: 900;
+  color: rgb(236, 220, 73);
+  text-shadow: 10px 10px 5px whitesmoke;
+}
+
+.sector0,
+.sector1,
+.sector2,
+.sector3,
+.sector4,
+.sector5,
+.sector6,
+.sector7,
+.sector8,
+.sector9 {
+  background-color: rgb(0, 220, 50);
+  box-shadow: 5px 5px 15px rgba(119, 152, 52, 0.8);
+}
+
+.sector2,
+.sector3,
+.sector6,
+.sector7 {
+  transform: rotate(-8deg);
+  box-shadow: 5px 5px 15px rgba(119, 152, 52, 0.8);
+}
+
+.sector0,
+.sector1,
+.sector4,
+.sector5,
+.sector8,
+.sector9 {
+  transform: rotate(8deg)
+}
+
+.inclinar {
+  display: inline-block;
+  /* Necesario para que la rotación funcione correctamente */
+  transform: rotate(-7deg);
+  /* Rota el texto 45 grados */
+}
+
+cite {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: DarkBlue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-variant: small-caps;
+  cursor: pointer
+}
